@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+	<title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/AUTORETRETE.jpg">
+	<!-- Elementos esenciales! -->
+	<meta charset="ISO-8859-1">
+	<meta name="keywords" content="Ilustración, ilustradora, arte, humor gráfico, dibujo">
+	<meta name="description" content="Página web de ilustración de Alejandra Amanda Vinuesa">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" href="css/basic.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</header>
+
+<body>
+	<main class="container" style="background-image: url(images/degradadoDobleRR.jpg); background-size: 100%;">
+		<nav>
+			<section id="menu" class="menu">
+				<section id="bars" class="bars">
+					<section class="bar1"></section>
+					<section class="bar2"></section>
+					<section class="bar3"></section>
+				</section>
+				
+				<section id="menu-panel" class="menu-panel">
+					<ul>
+						<li class="list"><a class="menuText" href="work.html">WORK</a><img id="flechaWork" class="flechaWork" src="images/flecha.png">
+							<ul id="menu2" class="menu2"><li><a href="work-hm.html">Humor Gráfico</a></li>
+							<li><a href="work-ilus.html">Ilustración</a></li>
+							<li><a href="work-prints.html">Prints</a></li>
+							<li><a href="work-boc.html">Bocetos</a></li>
+							</ul>
+						</li>
+						<li class="list"><a class="menuText" href="shop.html">SHOP</a></li>
+						<li class="list"><a class="menuText" href="about.html">ABOUT</a></li>
+						<li class="list"><a class="menuText" href="contact.html">CONTACT</a></li>
+					</ul>
+				</section>
+				<section id="overlayMenu" class="overlayMenu"></section>
+			</section>
+
+			<section class="navbar">
+				<ul>
+					<li><a class="transparent" href="work.html">WORK</a></li>
+					<li><a class="transparent" href="shop.html">SHOP</a></li>
+					<li><a class="transparent" href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</section>
+		</nav>
+
+		<section class="contact-box">
+			<p style="font-weight: 600; font-size: 18px;">CONTACTA CONMIGO</p>
+			<br>
+			<form action="contact.html">
+				<section class="contact-input1">
+					<label for="nombreId">Nombre</label>
+					<input style="height: 30px;" type="text" id="nombreId" name="nombre">
+				</section><section class="contact-input2">
+					<label for="apellidoId">Apellido</label>
+					<input style="width: 100%; height: 30px;" type="text" id="apellidoId" name="apellido">
+				</section>
+					<br>
+					<br>
+				<label for="emailId">Correo Electrónico</label>
+				<input style="width: 100%; height: 30px; text-transform: none;" type="email" id="emailId" name="email">
+					<br>
+					<br>
+				<label for="mensajeId">Mensaje</label>
+				<textarea style="height: 300px; width: 100%;" id="mensajeId" name="mensaje" rows="4" cols="30"></textarea>
+					<br>
+					<br>
+				<button>Enviar</button>
+			</form>
+		</section>
+
+		<section class="contact-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d454.8421210029607!2d-6.345098970416774!3d38.916979546551794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1426c08a25142d%3A0xeabc00a917e6c128!2sC.%20Sta.%20Eulalia%2C%2019%2C%2006800%20M%C3%A9rida%2C%20Badajoz!5e0!3m2!1ses!2ses!4v1639639935632!5m2!1ses!2ses" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</section>
+			
+		<footer class="footer">
+			<section class="footer-logos">
+				<img src="images/correo.png"><img src="images/instagram.png">
+			</section>
+			<section class="footer-text">
+				<p>Todos los derechos reservados</p>
+				<p style="font-size: 10px; margin-top: 10px;">&copy; 2021, Alejandra Amanda Vinuesa</p>
+			</section>
+			<section class="footer-firma"><img src="images/firmaBlanco.png"></section>
+		</footer>
+
+	</main>
+
+	<script src="js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+* {
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+	text-align: center;
+	position: relative;
+}
+
+/* NAVBAR */
+
+.menu {
+	display: none;
+}
+
+.navbar {
+	position: absolute;
+	right: 40px;
+}
+.navbar ul {
+	padding: 15px 10px;
+  	list-style-type: none;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: white;
+}
+
+.navbar li {
+	display:  inline-block;
+	padding: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+	user-select:  none;
+}
+
+/* NAVBAR-WORK */
+
+.navbar-work ul {
+	padding: 100px 10px 0px 10px;
+  	list-style-type: none;
+}
+
+.navbar-work a {
+	text-decoration: none;
+	color: white;
+}
+
+.navbar-work li {
+	display:  inline-block;
+	padding: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	user-select:  none;
+}
+.navbar-work hr {
+	margin-top: 10px;
+	width: 200px;
+	height: 3px;
+	border: 0;
+	border-radius: 10px;
+	color: white;
+	background-color: white;
+}
+@media only screen and (max-width:570px) {
+
+	.container {
+		width: 100vw;
+		text-align: center;
+		position: relative;
+	}
+
+	/* NAVBAR */
+
+	.navbar {
+		display: none;
+	}
+	.navbar-work {
+		display: none;
+	}
+	
+	.menu {
+		position: relative;
+		display: inline-block;
+		padding: 10px;
+		width: 100%;
+	}
+	.bars {
+		position: absolute;
+		right: 10px;
+		z-index: 2;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 45px;
+		height: 5px;
+		background-color: white;
+		border-radius: 5px;
+		margin: 6px 0;
+		transition: 0.5s;
+	}
+
+	.visible .bar1 {
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.visible .bar2 {
+		opacity: 0;
+	}
+
+	.visible .bar3 {
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+
+	.menu-panel {
+		display: none;
+		position: absolute;
+		z-index: 2;
+	}
+	.menu-panel ul {
+		list-style-type: none;
+		padding: 30px;
+	}
+	
+	.menu-panel .menuText {
+		text-decoration: none;
+		color: white;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		font-size: 25px;
+		text-align: center;
+	}
+	
+	.menu-panel .list {
+		width: 100%;
+		border-style: solid;
+		border-color: white;
+		background-color: rgba(255, 255, 255, 0.2);
+		margin-bottom: 10px;
+		padding: 5px;
+		user-select: none;
+	}
+	.flechaWork {
+		float: inline-end;
+		vertical-align: sub;
+		width: 35px;
+		height: 30px;
+		transform: rotate(270deg);
+	}
+	.hidden .flechaWork {
+		transform: rotate(90deg);
+	}
+	.menu2 {
+		display: none;
+		width: 100%;
+		margin-top: -25px;
+		margin-bottom: -20px;
+	}
+	.menu2 a {
+		color: white;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		text-decoration: none;
+		user-select: none;
+	}
+
+	.visible .menu-panel {
+		display: block;
+		top: 30px;
+		right: 0px;
+		width: 100%;
+		height: 400px;
+	}
+	.overlayMenu {
+		position: fixed;
+		display: none;
+		top: 0px; /* Para que pueda tapar todo por la parte de arriba */
+		left: 0px;
+		width: 100vw; 
+		height: 100vh;
+		z-index: 1; /* Capa que tapa todo lo que hay en la p?gina, estando encima de esta */
+		background-color: grey;
+		opacity: 50%;
+	}
+	
+	.visible .overlayMenu {
+		display: initial;
+		opacity: 85%;
+	}
+
+}

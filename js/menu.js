@@ -1,27 +1,30 @@
 "use strict"
 
-const menu = document.querySelector('.menu');
-var flecha = document.getElementById("flecha");
-var menuConsejos = document.getElementById("menuConsejos");
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 15) {
-        menu.classList.add('menu-scrolled');
-    } else if (window.scrollY <= 15) {
-        menu.classList.remove('menu-scrolled');
-    }
-})
-
-flecha.onclick = function () {
-    menu.classList.toggle("hidden");
-    if (menu.classList.contains("hidden")) {
-        menuConsejos.style.display = "block";
-        menu.style.height = "100px";
-    } else if (!menu.classList.contains("hidden")) {
-        menuConsejos.style.display = "none";
-        menu.style.height = "80px";
-        menu.classList.remove("hidden");
-    }
-}
+        var body = document.getElementsByTagName("body")[0];
+		var menu = document.getElementById("menu");
+        var menuPanel = document.getElementById("menu-panel");
+        var menu2 = document.getElementById("menu2");
+        var flecha = document.getElementById("flechaWork");
+        var bars = document.getElementById("bars");
 
 
+		bars.onclick = function() {
+			console.log("Click en el menu");
+			menu.classList.toggle("visible");
+			 if (menu.classList.contains("visible")) {
+				 body.style.overflow = "hidden";
+			 }
+			 else {
+				 body.style.overflow = "initial";
+			 }
+        }
+        flecha.onclick = function() {
+            console.log("Click en el menu2");
+            menuPanel.classList.toggle("hidden");
+			 if (menuPanel.classList.contains("hidden")) {
+				 menu2.style.display = "block";
+			 }
+			 else {
+                menu2.style.display = "none";
+			 }
+        }
